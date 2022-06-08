@@ -84,36 +84,55 @@ guessSyntax = "true"
 
 [params]
 copyright = "The Apache Software Foundation. Apache and the Apache feather logo are trademarks of The Apache Software Foundation."
-#privacy_policy = "https://policies.google.com/privacy"
 
-# Google Custom Search Engine ID. Remove or comment out to disable search.
 #gcs_engine_id = "011737558837375720776:fsdu1nryfng"
 
-# Enable Algolia DocSearch
 algolia_docsearch = true
-# Enable Lunr.js offline search
 offlineSearch = false
 
-# First one is picked as the Twitter card image if not set on page.
-# images = ["images/project-illustration.png"]
 
-# Menu title if your navbar has a versions selector to access old versions of your site.
-# This menu appears only if you have at least one [params.versions] set.
-version_menu = "Releases"
-
-# Flag used in the "version-banner" partial to decide whether to display a 
-# banner on every page indicating that this is an archived version of the docs.
-# Set this flag to "true" if you want to display the banner.
+version = "3.0"
 archived_version = false
+version_menu = "Releases"
+url_latest_version = "https://dubbo.apache.org/zh/docs/"
 
-# The version number for the version of the docs represented in this doc set.
-# Used in the "version-banner" partial to display a version number for the 
-# current doc set.
-version = "v2.7"
+# Add your release versions here
+[[params.versions]]
+  version = "v3.0 (latest)"
+  url = "https://dubbo.apache.org/zh/docs/"
 
-# A link to latest version of the docs. Used in the "version-banner" partial to
-# point people to the main doc site.
-url_latest_version = "/docs/v2.7"
+[[params.versions]]
+  version = "v2.x"
+  url = "https://dubbo.apache.org/zh/docsv2.7/"
+
+[[params.versions]]
+  version = "v3.0(building)"
+  url = "https://dubbo.apache.org/zh/docs3-building/docs"
+
+
+# Add Ecosystems
+# en_ecosystem_docs_menu = "Advanced Docs"
+# cn_ecosystem_docs_menu = "高级文档"
+#
+# [[params.ecosystems.docs]]
+#   ecosystem = "Dubbo Java SDK"
+#   en.docs.url = "https://chickenlj.github.io/incubator-dubbo-website/en/java-sdk/"
+#   cn.docs.url = "https://chickenlj.github.io/incubator-dubbo-website/cn/java-sdk/"
+#
+# [[params.ecosystems.docs]]
+#   ecosystem = "Dubbo Golang SDK"
+#   en.docs.url = "https://chickenlj.github.io/incubator-dubbo-website/en/golang-sdk/"
+#   cn.docs.url = "https://chickenlj.github.io/incubator-dubbo-website/cn/golang-sdk/"
+#
+# [[params.ecosystems.docs]]
+#   ecosystem = "Dubbo Pixiu"
+#   en.docs.url = "https://chickenlj.github.io/incubator-dubbo-website/en/pixiu/"
+#   cn.docs.url = "https://chickenlj.github.io/incubator-dubbo-website/cn/pixiu/"
+#
+# [[params.ecosystems.docs]]
+#   ecosystem = "Dubbo Admin"
+#   en.docs.url = "https://chickenlj.github.io/incubator-dubbo-website/en/admin/"
+#   cn.docs.url = "https://chickenlj.github.io/incubator-dubbo-website/cn/admin/"
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
 github_repo = "https://github.com/apache/dubbo-website"
@@ -138,6 +157,7 @@ sidebar_search_disable = true
 navbar_logo = true
 # Set to true to disable the About link in the site footer
 footer_about_disable = true
+navbar_translucent_over_cover_disable = true
 
 # Adds a H2 section titled "Feedback" to the bottom of each doc. The responses are sent to Google Analytics as events.
 # This feature depends on [services.googleAnalytics] and will be disabled if "services.googleAnalytics.id" is not set.
@@ -185,7 +205,7 @@ desc = "Development takes place here!"
 #        desc = "Chat with other project developers"
 [[params.links.developer]]
 name = "Subscribe to mailing list"
-url = "mailto://dev-subscribe@dubbo.apache.org"
+url = "mailto:dev-subscribe@dubbo.apache.org"
 icon = "fa fa-envelope"
 desc = "Discuss development issues around the project"
 

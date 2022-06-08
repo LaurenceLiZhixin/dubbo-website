@@ -35,3 +35,14 @@ assets/scss/_styles_project.scss
     height: 25px !important;
   }
 }
+.td-sidebar-nav {
+  a {
+    &.active {
+      color: $sidebar-nav-active;
+    }
+  }
+}
+
+.card-bottom {
+  margin-bottom: 20px;
+}
